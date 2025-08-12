@@ -68,14 +68,17 @@ body {
 }
 
 .view-btn {
+  width: 218px;
+  height: 52px;
   display: block;
   margin: 20px auto 0;
   padding: 8px 20px;
-  background: #000;
-  color: #fff;
+  background: #fff;
+  color: #000000;
   border: none;
-  border-radius: 20px;
+  border-radius: 62px;
   cursor: pointer;
+  border: 1px solid #0000001a;
 }
 
 /* Browse by style */
@@ -150,6 +153,9 @@ body {
   .section {
     padding: 20px 10px;
   }
+  .view-btn {
+    max-width: 358px;
+  }
 }
 
 .title {
@@ -189,7 +195,7 @@ body {
   border-radius: 5px;
 }
 
-@media (max-width: 390px) {
+@media (max-width: 700px) {
   .grid {
     grid-template-columns: 1fr;
   }
