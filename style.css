@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html, body {
+    width: 100%;
+    overflow-x: hidden; 
+  }
+  
+  body {
+    cursor: pointer;
+    font-family: Arial, sans-serif;
+    background: #f9f9f9;
+    color: #000000;
+  }
+  
+  .section {
+    padding: 30px 20px;
+    background: #fff;
+    margin: 20px auto;
+    max-width: 1200px;
+    border-radius: 10px;
+  }
+  
+  .section-title {
+    line-height: 100%;
+    text-align: center;
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .product-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+  }
+  
+  .product-card {
+    background: #fff;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .product-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .product-card h3 {
+    font-size: 14px;
+    margin: 10px 0;
+  }
+  
+  .price {
+    font-size: 16px;
+    font-weight: bold;
+    color: #000;
+  }
+  
+  .old-price {
+    text-decoration: line-through;
+    font-size: 14px;
+    color: gray;
+  }
+  
+  .view-btn {
+    display: block;
+    margin: 20px auto 0;
+    padding: 8px 20px;
+    background: #000;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+  
+  /* Browse by style */
+  .style-section {
+    background: #f4f4f4;
+    border-radius: 10px;
+  }
+  
+  .style-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto auto;
+    gap: 15px;
+  }
+  
+  .style-card {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+  }
+  
+  .style-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .style-card p {
+    padding: 10px;
+    font-weight: bold;
+  }
+  
+  .style-card.tall img {
+    height: 250px;
+    object-fit: cover;
+  }
+ /* 📱 Tablet */
+@media (max-width: 768px) {
+    .product-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .style-grid {
+      grid-template-columns: 1fr 1fr;
+    }
+    .style-card.tall img {
+      height: auto;
+    }
+  }
+  
+  /* 📱 Telefon */
+  @media (max-width: 480px) {
+    .product-grid {
+      grid-template-columns: 1fr;
+    }
+  
+    .style-grid {
+      grid-template-columns: 1fr;
+    }
+  
+    .product-card img,
+    .style-card img {
+      width: 100%;
+      height: auto;
+    }
+  
+    .product-card h3,
+    .price {
+      text-align: center;
+    }
+  
+    .section {
+      padding: 20px 10px;
+    }
+  }
+  
